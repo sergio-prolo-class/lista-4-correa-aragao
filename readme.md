@@ -14,34 +14,47 @@ classDiagram
     class NaveEspacial {
         <<abstract>>
         
-        # velocidadeAtual
+        # velocidadeAtual : int
+        + acelerar(intensidade : int) : String
+        + frear(intensidade : int) : String
+        + pousar() : String
+        + decolar() : String 
     }
     
     class NaveMineradora {
-        
+        - energiaLaserMaxima : int
+        - energiaLaserAtual : int
+        + minerar(custo : int) : String 
     }
     
     class NaveExploradora {
-        
+        - holofotes : bool
+        + ligaHolofotes() : String 
     }
      class NaveCargueira {
-         
+         - capacidadeMaxima : int
+         - cargaAtual : int 
+         + carregar(peso : int) : String 
      }
      
      class NaveSentinela {
-         
+         - radar : bool
+         + ligarRadar() : String
      }
      
      class Tripulada{
          <<interface>>
+         + controlarManual() : String
      }
      
      class Blindada {
          <<interface>>
+         + ativarBlindagem() : String 
      }
      
      class Autonoma {
-         
+         <<interface>>
+         + ativarControleAutomatico() : String 
      }
     
     
