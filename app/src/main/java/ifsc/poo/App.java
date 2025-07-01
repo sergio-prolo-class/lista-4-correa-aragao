@@ -3,8 +3,11 @@
  */
 package ifsc.poo;
 
+import java.util.LinkedHashSet;
+
 public class App {
     public static void main(String[] args) {
 
+        //LinkedHashSet<garagem> = new LinkedHashSet<>();
     }
 }
