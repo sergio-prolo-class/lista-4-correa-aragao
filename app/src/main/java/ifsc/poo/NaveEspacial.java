@@ -10,5 +10,7 @@ public abstract class NaveEspacial {
         this.velocidadeAtual = velocidadeAtual;
     }
 
-    //public abstract int
+
+
+
 }
