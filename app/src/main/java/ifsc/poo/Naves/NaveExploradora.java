@@ -10,4 +10,9 @@ public class NaveExploradora extends NaveEspacial implements Blindada {
     public NaveExploradora(int velocidadeAtual) {
         super(velocidadeAtual);
     }
+
+    @Override
+    public String ativarBlindagem() {
+        return "Ativando blindagem";
+    }
 }

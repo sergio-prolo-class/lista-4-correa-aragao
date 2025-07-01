@@ -8,4 +8,9 @@ public class NaveCargueira extends NaveEspacial implements Blindada {
     public NaveCargueira(int velocidadeAtual) {
         super(velocidadeAtual);
     }
+
+    @Override
+    public String ativarBlindagem() {
+        return "Ativando a blindagem";
+    }
 }
